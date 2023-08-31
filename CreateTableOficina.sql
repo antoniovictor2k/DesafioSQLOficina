@@ -15,6 +15,7 @@ create table Oficina(
 create table Clientes(
     idCliente int primary key auto_increment,
     idOficina int,
+    Nome varchar(40),
     CPF char(11) not null unique,
     Endereco varchar(40),
     DataDeNascimento date not null,
